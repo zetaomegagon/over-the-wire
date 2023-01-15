@@ -1,8 +1,10 @@
 #!/usr/bin/env bash
+declare target old_schema script
 target="$1"
 old_schema="$OTW_SCHEMA"
+script="${0##*/}"
 
-usage() { echo "Usage: $0 <json-file>"; }
+usage() { echo "Usage: $script <json-file>"; }
 
 if [[ -n $target && $target = *.json ]]; then
     source $HOME/.bashrc.d/07-over-the-wire.rc
