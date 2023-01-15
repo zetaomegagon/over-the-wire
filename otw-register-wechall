@@ -8,7 +8,7 @@ declare -i n m
 declare server
 server=$1 n=$2 m=$3
 
-usage() { echo "Usage: otw-register-wechall <level-start> <level-end>"; }
+usage() { echo "Usage: $0 <level-start> <level-end>"; }
 
 if [[ -z $server || -z $n || -z $m ]]; then
     usage
