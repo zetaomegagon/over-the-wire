@@ -1,1 +1,321 @@
-{ "otw": { "servers": { "bandit": { "host": "bandit.labs.overthewire.org", "port": "2220", "levels": [ { "name": "level 0", "user": "bandit0", "password": "", "notes": {} }, { "name": "level 1", "user": "bandit1", "password": "", "notes": {} }, { "name": "level 2", "user": "bandit2", "password": "", "notes": {} }, { "name": "level 3", "user": "bandit3", "password": "", "notes": {} }, { "name": "level 4", "user": "bandit4", "password": "", "notes": {} }, { "name": "level 5", "user": "bandit5", "password": "", "notes": {} }, { "name": "level 6", "user": "bandit6", "password": "", "notes": {} }, { "name": "level 7", "user": "bandit7", "password": "", "notes": {} }, { "name": "level 8", "user": "bandit8", "password": "", "notes": {} }, { "name": "level 9", "user": "bandit9", "password": "", "notes": {} }, { "name": "level 10", "user": "bandit10", "password": "", "notes": {} }, { "name": "level 11", "user": "bandit11", "password": "", "notes": {} }, { "name": "level 12", "user": "bandit12", "password": "", "notes": {} }, { "name": "level 13", "user": "bandit13", "password": "", "notes": {} }, { "name": "level 14", "user": "bandit14", "password": "", "notes": {} }, { "name": "level 15", "user": "bandit15", "password": "", "notes": {} }, { "name": "level 16", "user": "bandit16", "password": "", "notes": {} }, { "name": "level 17", "user": "bandit17", "password": "", "notes": {} }, { "name": "level 18", "user": "bandit18", "password": "", "notes": {} }, { "name": "level 19", "user": "bandit19", "password": "", "notes": {} }, { "name": "level 20", "user": "bandit20", "password": "", "notes": {} }, { "name": "level 21", "user": "bandit21", "password": "", "notes": {} }, { "name": "level 22", "user": "bandit22", "password": "", "notes": {} }, { "name": "level 23", "user": "bandit23", "password": "", "notes": {} }, { "name": "level 24", "user": "bandit24", "password": "", "notes": {} }, { "name": "level 25", "user": "bandit25", "password": "", "notes": {} }, { "name": "level 26", "user": "bandit26", "password": "", "notes": {} }, { "name": "level 27", "user": "bandit27", "password": "", "notes": {} }, { "name": "level 28", "user": "bandit28", "password": "", "notes": {} }, { "name": "level 29", "user": "bandit29", "password": "", "notes": {} }, { "name": "level 30", "user": "bandit30", "password": "", "notes": {} }, { "name": "level 31", "user": "bandit31", "password": "", "notes": {} }, { "name": "level 32", "user": "bandit32", "password": "", "notes": {} }, { "name": "level 33", "user": "bandit33", "password": "", "notes": {} }, { "name": "level 34", "user": "bandit34", "password": "", "notes": {} } ] }, "natas": { "host": "", "port": "", "levels": [ { "name": "", "user": "", "password": "" } ] }, "leviathan": { "host": "", "port": "", "levels": [ { "name": "", "user": "", "password": "" } ] }, "krypton": { "host": "", "port": "", "levels": [ { "name": "", "user": "", "password": "" } ] }, "narnia": { "host": "", "port": "", "levels": [ { "name": "", "user": "", "password": "" } ] }, "behemoth": { "host": "", "port": "", "levels": [ { "name": "", "user": "", "password": "" } ] }, "utumno": { "host": "", "port": "", "levels": [ { "name": "", "user": "", "password": "" } ] }, "maze": { "host": "", "port": "", "levels": [ { "name": "", "user": "", "password": "" } ] }, "vortex": { "host": "", "port": "", "levels": [ { "name": "", "user": "", "password": "" } ] }, "manpage": { "host": "", "port": "", "levels": [ { "name": "", "user": "", "password": "" } ] } } } }
+{
+  "otw": {
+    "servers": {
+      "bandit": {
+        "host": "bandit.labs.overthewire.org",
+        "port": "2220",
+        "levels": [
+          {
+            "name": "level 0",
+            "user": "bandit0",
+            "password": "",
+            "notes": {}
+          },
+          {
+            "name": "level 1",
+            "user": "bandit1",
+            "password": "",
+            "notes": {}
+          },
+          {
+            "name": "level 2",
+            "user": "bandit2",
+            "password": "",
+            "notes": {}
+          },
+          {
+            "name": "level 3",
+            "user": "bandit3",
+            "password": "",
+            "notes": {}
+          },
+          {
+            "name": "level 4",
+            "user": "bandit4",
+            "password": "",
+            "notes": {}
+          },
+          {
+            "name": "level 5",
+            "user": "bandit5",
+            "password": "",
+            "notes": {}
+          },
+          {
+            "name": "level 6",
+            "user": "bandit6",
+            "password": "",
+            "notes": {}
+          },
+          {
+            "name": "level 7",
+            "user": "bandit7",
+            "password": "",
+            "notes": {}
+          },
+          {
+            "name": "level 8",
+            "user": "bandit8",
+            "password": "",
+            "notes": {}
+          },
+          {
+            "name": "level 9",
+            "user": "bandit9",
+            "password": "",
+            "notes": {}
+          },
+          {
+            "name": "level 10",
+            "user": "bandit10",
+            "password": "",
+            "notes": {}
+          },
+          {
+            "name": "level 11",
+            "user": "bandit11",
+            "password": "",
+            "notes": {}
+          },
+          {
+            "name": "level 12",
+            "user": "bandit12",
+            "password": "",
+            "notes": {}
+          },
+          {
+            "name": "level 13",
+            "user": "bandit13",
+            "password": "",
+            "notes": {}
+          },
+          {
+            "name": "level 14",
+            "user": "bandit14",
+            "password": "",
+            "notes": {}
+          },
+          {
+            "name": "level 15",
+            "user": "bandit15",
+            "password": "",
+            "notes": {}
+          },
+          {
+            "name": "level 16",
+            "user": "bandit16",
+            "password": "",
+            "notes": {}
+          },
+          {
+            "name": "level 17",
+            "user": "bandit17",
+            "password": "",
+            "notes": {}
+          },
+          {
+            "name": "level 18",
+            "user": "bandit18",
+            "password": "",
+            "notes": {}
+          },
+          {
+            "name": "level 19",
+            "user": "bandit19",
+            "password": "",
+            "notes": {}
+          },
+          {
+            "name": "level 20",
+            "user": "bandit20",
+            "password": "",
+            "notes": {}
+          },
+          {
+            "name": "level 21",
+            "user": "bandit21",
+            "password": "",
+            "notes": {}
+          },
+          {
+            "name": "level 22",
+            "user": "bandit22",
+            "password": "",
+            "notes": {}
+          },
+          {
+            "name": "level 23",
+            "user": "bandit23",
+            "password": "",
+            "notes": {}
+          },
+          {
+            "name": "level 24",
+            "user": "bandit24",
+            "password": "",
+            "notes": {}
+          },
+          {
+            "name": "level 25",
+            "user": "bandit25",
+            "password": "",
+            "notes": {}
+          },
+          {
+            "name": "level 26",
+            "user": "bandit26",
+            "password": "",
+            "notes": {}
+          },
+          {
+            "name": "level 27",
+            "user": "bandit27",
+            "password": "",
+            "notes": {}
+          },
+          {
+            "name": "level 28",
+            "user": "bandit28",
+            "password": "",
+            "notes": {}
+          },
+          {
+            "name": "level 29",
+            "user": "bandit29",
+            "password": "",
+            "notes": {}
+          },
+          {
+            "name": "level 30",
+            "user": "bandit30",
+            "password": "",
+            "notes": {}
+          },
+          {
+            "name": "level 31",
+            "user": "bandit31",
+            "password": "",
+            "notes": {}
+          },
+          {
+            "name": "level 32",
+            "user": "bandit32",
+            "password": "",
+            "notes": {}
+          },
+          {
+            "name": "level 33",
+            "user": "bandit33",
+            "password": "",
+            "notes": {}
+          },
+          {
+            "name": "level 34",
+            "user": "bandit34",
+            "password": "",
+            "notes": {}
+          }
+        ]
+      },
+      "natas": {
+        "host": "",
+        "port": "",
+        "levels": [
+          {
+            "name": "",
+            "user": "",
+            "password": ""
+          }
+        ]
+      },
+      "leviathan": {
+        "host": "",
+        "port": "",
+        "levels": [
+          {
+            "name": "",
+            "user": "",
+            "password": ""
+          }
+        ]
+      },
+      "krypton": {
+        "host": "",
+        "port": "",
+        "levels": [
+          {
+            "name": "",
+            "user": "",
+            "password": ""
+          }
+        ]
+      },
+      "narnia": {
+        "host": "",
+        "port": "",
+        "levels": [
+          {
+            "name": "",
+            "user": "",
+            "password": ""
+          }
+        ]
+      },
+      "behemoth": {
+        "host": "",
+        "port": "",
+        "levels": [
+          {
+            "name": "",
+            "user": "",
+            "password": ""
+          }
+        ]
+      },
+      "utumno": {
+        "host": "",
+        "port": "",
+        "levels": [
+          {
+            "name": "",
+            "user": "",
+            "password": ""
+          }
+        ]
+      },
+      "maze": {
+        "host": "",
+        "port": "",
+        "levels": [
+          {
+            "name": "",
+            "user": "",
+            "password": ""
+          }
+        ]
+      },
+      "vortex": {
+        "host": "",
+        "port": "",
+        "levels": [
+          {
+            "name": "",
+            "user": "",
+            "password": ""
+          }
+        ]
+      },
+      "manpage": {
+        "host": "",
+        "port": "",
+        "levels": [
+          {
+            "name": "",
+            "user": "",
+            "password": ""
+          }
+        ]
+      }
+    }
+  }
+}
