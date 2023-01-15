@@ -1,3 +1,4 @@
 otw.json
 *backup*
 !*.asc
+!backup/
