@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+
+# remotes into all solved bandit levels and registers
+# them with wechall
+source $HOME/.bashrc.d/07-over-the-wire.rc
+
+declare -i n m
+declare server
+server=$1 n=$2 m=$3
+
+usage() { echo "Usage: otw-register-wechall <level-start> <level-end>"; }
+
+if [[ -z $server || -z $n || -z $m ]]; then
+    usage
+else
+    for level in $(seq $n 1 $m); do
+	if otw-ssh  "$sever" "$level" "wechall && exit 0"; then
+	    continue
+	else
+	    echo "Can't login to level $level"
+	    continue
+    done
+fi

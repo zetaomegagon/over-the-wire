@@ -1,0 +1,26 @@
+#!/usr/bin/env bash
+
+declare host port schema
+host="bandit.labs.overthewire.org"
+port=2220
+schema="$OTW_SCHEMA_DIR/$OTW_SCHEMA_NAME"
+
+declare -i n m
+n=$1
+m=$2
+
+usage() { echo "Usage: $0 <level-start> <level-end>"; }
+
+if [[ -z $n || -z $m ]]; then
+    usage
+    else
+	for level in $(seq $n 1 $m); do
+	    arg1=".otw.servers.bandit.levels[$level].notes"
+	    arg2="{ \"repo\": \"ssh://bandit${level}-git@${host}:${port}/home/bandit${level}-git/repo\" }"
+	    new_schema="$(jq "${arg1} |= ${arg2}" "$schema")"
+
+	    cp $schema ${schema}.backup
+	    echo "$new_schema" > $schema
+	    echo "$(jq ${arg1}.repo $schema) inserted into ${arg1}.repo"
+	done
+fi
