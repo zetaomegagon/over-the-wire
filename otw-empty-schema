@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+target="$1"
+old_schema="$OTW_SCHEMA"
+
+usage() { echo "Usage: $0 <json-file>"; }
+
+if [[ -n $target && $target = *.json ]]; then
+    source $HOME/.bashrc.d/07-over-the-wire.rc
+    otw-backup-schema
+    
+    for level in {0..34}; do
+	new_schema=$(jq ".otw.servers.bandit.levels[$level].password |= \"\"" $old_schema)
+	echo $new_schema > $old_schema
+
+	new_schema=$(jq ".otw.servers.bandit.levels[$level].notes |= {}" $old_schema)
+	echo $new_schema > $old_schema
+    done
+
+    cat $old_schema > $target
+else
+    usage
+fi
