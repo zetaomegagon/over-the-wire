@@ -4,7 +4,7 @@ declare host port schema script
 host="bandit.labs.overthewire.org"
 port=2220
 schema="$OTW_SCHEMA_DIR/$OTW_SCHEMA_NAME"
-script="${0/.\//}"
+script="${0##*/}"
 
 declare -i n m
 n=$1
