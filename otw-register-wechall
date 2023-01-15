@@ -5,12 +5,13 @@
 source $HOME/.bashrc.d/07-over-the-wire.rc
 
 declare -i n m
-declare server
-server=$1 n=$2 m=$3
+declare server script
+server="$1" n="$2" m="$3"
+script="${0##*/}"
 
-usage() { echo "Usage: $0 <level-start> <level-end>"; }
+usage() { echo "Usage: $script <level-start> <level-end>"; }
 
-if [[ -z $server || -z $n || -z $m ]]; then
+if [[ -z "$server" || -z "$n" || -z "$m" ]]; then
     usage
 else
     for level in $(seq $n 1 $m); do
