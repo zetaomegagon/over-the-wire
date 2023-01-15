@@ -1,15 +1,16 @@
 #!/usr/bin/env bash
 
-declare host port schema
+declare host port schema script
 host="bandit.labs.overthewire.org"
 port=2220
 schema="$OTW_SCHEMA_DIR/$OTW_SCHEMA_NAME"
+script="${0/.\//}"
 
 declare -i n m
 n=$1
 m=$2
 
-usage() { echo "Usage: $0 <level-start> <level-end>"; }
+usage() { echo "Usage: $script <level-start> <level-end>"; }
 
 if [[ -z $n || -z $m ]]; then
     usage
